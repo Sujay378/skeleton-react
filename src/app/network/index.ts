@@ -7,8 +7,8 @@ declare module "@tanstack/react-query" {
     defaultError: AxiosError;
   }
 }
+export const queryClient = new QueryClient();
 
 export * from "./axiosClient";
 export * from "./endpoints";
-
-export const queryClient = new QueryClient();
+export * from "./loaders";
